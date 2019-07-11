@@ -43,6 +43,7 @@ header.appendChild(createMenu(menuItems))
 function createMenu(array) {
   // define new elements
   const menuContainer = document.createElement('div');
+  menuContainer.classList.add('menu');
   const list = document.createElement('ul');
  
   
@@ -58,7 +59,7 @@ function createMenu(array) {
     listItem.classList.add('li')
     })
 
-    menuContainer.classList.add("menu");
+    // menuContainer.classList.add("menu");
     
 let menuButton = document.querySelector('.menu-button')
 menuButton.addEventListener('click', event => {
